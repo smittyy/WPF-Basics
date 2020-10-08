@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Basics"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="840" Width="650">
     <Border Padding="10">
     <!-- Stack Panels only take uo the space that they need and will seek for the minimal stuff
         -->
@@ -26,10 +26,96 @@
         </Grid>
 
             <TextBlock Text="I might use this to make a text based adventure game." FontWeight="Bold" Margin="0 10" />
-            <TextBlock Text="This is where I would write the scene and options." FontWeight="Bold" Margin="0 10" />
+            <TextBlock Text="This is where I would write the scene and options." Margin="0 10" />
 
             <!-- This is where the player would write their choices.-->
-            <TextBox />
+            <TextBox Padding="2" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0 0 10 0"><!-- Dont need to sa what column but can.-->
+                    <TextBlock Text="NOOO" />
+                    <TextBox IsReadOnly="True" Background="LightGray" Padding="2" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="0 0 10 0">
+                    <TextBlock Text="Gross" />
+                    <TextBox IsReadOnly="True" Background="LightGray" Padding="2" />
+                </StackPanel>
+
+            </Grid>
+
+                <TextBlock Text="look at ME" />
+                <TextBox IsReadOnly="True" Background="LightGray" Padding="2" />
+
+            <!--Raw Material-->
+            <TextBlock Text="RAW" FontWeight="Bold" Margin="0 10"></TextBlock>
+            <TextBlock Text="Funky stuff" />
+            <ComboBox Padding="2">
+                <ComboBoxItem>Rat</ComboBoxItem>
+                <ComboBoxItem>Rat With a stick</ComboBoxItem>
+                <ComboBoxItem>An entire wax doll of John Picard</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Excuse Me" FontWeight="Bold" Margin="0 10"></TextBlock>
+            <TextBlock Text="This is getting deep" Margin=" 0 0 0 10" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox Content="Funky 1" />
+                    <CheckBox Content="Funky 2" />
+                    <CheckBox Content="Funky 3" />
+                    <CheckBox Content="Funky 4" />
+                    <CheckBox Content="Funky 5" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="0 0 10 0">
+                    <CheckBox Content="Weld" />
+                    <CheckBox Content="Funky 6" />
+                    <CheckBox Content="Funky 7" />
+                    <CheckBox Content="Funky 8" />
+                    <CheckBox Content="Funky 9" />
+                </StackPanel>
+
+            </Grid>
+
+            <TextBlock Text="Length" Margin="0 10" />
+            <TextBox Padding="2" />
+
+            <TextBlock Text="Mass" />
+            <TextBox IsReadOnly="True" Background="LightGray" Padding="2" />
+
+            <TextBlock Text="Finish" />
+            <ComboBox Padding="2">
+                <ComboBoxItem>Painted</ComboBoxItem>
+                <ComboBoxItem>Spit Shine</ComboBoxItem>
+                <ComboBoxItem>Punched</ComboBoxItem>
+            </ComboBox>
+            <TextBlock Text="Something I didn't Read" />
+            <ComboBox Padding="2">
+                <ComboBoxItem>Copy</ComboBoxItem>
+                <ComboBoxItem>Paste</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Length" Margin="0 10" />
+            <TextBox Padding="2" />
+
+            <TextBlock Text="More Copy" Margin="0 10" />
+            <TextBox Padding="2" />
+
+            <TextBlock Text="Additional Info" FontWeight="Bold" Margin="0 10"></TextBlock>
+
+
+            <TextBlock Text="And some paste" Margin="0 10" />
+            <TextBox Padding="2" />
 
         </StackPanel>
     </Border>
