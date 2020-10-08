@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_Basics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Basics"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Padding="10">
+    <!-- Stack Panels only take uo the space that they need and will seek for the minimal stuff
+        -->
+    <StackPanel>
+        <Grid>
+    
+            <!--This is a comment. I dislike this. Give me back my // -->
+            
+            <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+                 <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="0 0 10 0" Grid.Column="0" Content="YO" />
+            <Button  Grid.Column="1" Content="You" />
+            <Button Margin="10 0 0 0" Grid.Column="2" Content="Suck" />
+        </Grid>
+
+            <TextBlock Text="I might use this to make a text based adventure game." FontWeight="Bold" Margin="0 10" />
+            <TextBlock Text="This is where I would write the scene and options." FontWeight="Bold" Margin="0 10" />
+
+            <!-- This is where the player would write their choices.-->
+            <TextBox />
+
+        </StackPanel>
+    </Border>
+</Window>
