@@ -70,7 +70,7 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                    <CheckBox Content="Funky 1" />
+                    <CheckBox IsChecked="True" Content="Funky 1" />
                     <CheckBox Content="Funky 2" />
                     <CheckBox Content="Funky 3" />
                     <CheckBox Content="Funky 4" />
